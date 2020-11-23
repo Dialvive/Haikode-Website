@@ -1,0 +1,35 @@
+<header>
+    <div class="row justify-content-center">
+        <div class="d-none d-lg-flex col-md-2"></div>
+        <div class="col-12 col-lg-8 col-main">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <li class="d-flex d-sm-none">
+                    <a class="navbar-brand haikode animated-text" href="/">HAIKODE</a>
+                </li>
+                <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+                    <ul class="navbar-nav mr-auto d-flex align-items-center justify-content-around nav-ul">
+                        <li>
+                            <a class="nav-link" href="#">Soluciones</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="d-none d-sm-flex">
+                            <a class="navbar-brand haikode animated-text" href="/">HAIKODE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#">Equipo</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="d-none d-lg-flex col-md-2"></div>
+    </div>
+</header>

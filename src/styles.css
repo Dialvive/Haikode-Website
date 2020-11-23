@@ -1,1 +1,218 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #593196;
+    --pink: #e83e8c;
+    --red: #fc3939;
+    --orange: #fd7e14;
+    --yellow: #efa31d;
+    --green: #13b955;
+    --teal: #20c997;
+    --cyan: #009cdc;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #00115E;
+    --accent: #007621;
+    --background: #27282C;
+    --light-bg: #F4F4F4;
+    --lighter-bg: #FAFAFA;
+    --success: #13b955;
+    --info: #009cdc;
+    --warning: #efa31d;
+    --danger: #fc3939;
+    --light: #f9f8fc;
+    --dark: #17141f;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Merriweather Sans", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    max-width: 1780px;
+}
+
+.col-main {
+    min-width: 400;
+    width: 100%;
+    max-width: 1780px;
+}
+
+.animated-bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+.page {
+    align-items: center;
+    position: relative;
+    max-width: 1780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.haikode {
+    color: var(--white);
+    font-family: "Amaranth";
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+header {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--gray);
+}
+
+.nav-ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    font-size: larger;
+}
+
+.boton-light {
+    text-align: right;
+    color: --gray;
+    width: fit-content;
+    margin-bottom: 16px;
+}
+
+.navbar {
+    background-color: var(--background);
+    color: var(--gray);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 300;
+}
+
+header.text:hover {
+    color: var(--white);
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--light-bg);
+    text-align: left;
+    background-color: var(--background);
+    min-height: 77.5vh;
+    max-width: 97vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amaranth";
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.fa {
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--lighter-bg);
+}
+
+.fa-btn {
+    align-self: center;
+}
+
+.fa-dark {
+    font-size: 100%;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 8vh;
+    bottom: 0px;
+    margin-top: 2vh;
+    clear: both;
+    padding-top: 2vh;
+    background-color: var(--background);
+    color: var(--gray);
+    font-weight: 200;
+    font-family: var(--font-family-sans-serif);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
