@@ -1,15 +1,15 @@
 <header>
-    <div class="row justify-content-center">
-        <div class="d-none d-lg-flex col-md-2"></div>
-        <div class="col-12 col-lg-8 col-main">
+    <div class="row justify-content-center fixed-top navbar navbar-dark">
+        <div class="d-none d-lg-flex col-md-1 col-lat no-gutters"></div>
+        <div class="col-12 col-lg-10 col-main align-content-center justify-content-center">
             <nav class="navbar navbar-expand-sm navbar-dark">
-                <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+                <button class="navbar-toggler" type="button" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <li class="d-flex d-sm-none">
-                    <a class="navbar-brand haikode animated-text" href="/">HAIKODE</a>
+                <li class="d-flex d-sm-none center">
+                    <a class="navbar-brand haikode animated-text center" href="/">HAIKODE</a>
                 </li>
-                <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto d-flex align-items-center justify-content-around nav-ul">
                         <li>
                             <a class="nav-link" href="#">Soluciones</a>
@@ -30,6 +30,6 @@
                 </div>
             </nav>
         </div>
-        <div class="d-none d-lg-flex col-md-2"></div>
+        <div class="d-none d-lg-flex col-md-1 col-lat no-gutters"></div>
     </div>
 </header>

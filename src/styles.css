@@ -45,11 +45,16 @@
 }
 
 html {
+    text-rendering: optimizeLegibility;
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    max-width: 1780px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 .col-main {
@@ -58,10 +63,10 @@ html {
     max-width: 1780px;
 }
 
-.animated-bg {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+.col-lat {
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
 }
 
 article,
@@ -81,8 +86,8 @@ section {
     align-items: center;
     position: relative;
     max-width: 1780px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .haikode {
@@ -93,12 +98,37 @@ section {
 }
 
 header {
-    position: relative;
+    text-rendering: optimizeLegibility;
+    left: 0px;
+    right: 0px;
     top: 0;
-    right: 0;
-    left: 0;
+    width: auto;
     overflow: hidden;
     color: var(--gray);
+    background-color: var(--background);
+    background: fixed;
+}
+
+.row-light {
+    background-color: var(--light-bg);
+    color: var(--background);
+    height: fit-content;
+    padding-top: 1.61%;
+    padding-bottom: 1.61%;
+    padding-left: 6.85%;
+    padding-right: 6.85%;
+    overflow-x: visible;
+}
+
+.row-dark {
+    background-color: var(--background);
+    color: var(--light-bg);
+    height: fit-content;
+    padding-top: 1.61%;
+    padding-bottom: 1.61%;
+    padding-left: 6.85%;
+    padding-right: 6.85%;
+    overflow-x: visible;
 }
 
 .nav-ul {
@@ -122,7 +152,9 @@ header {
     background-color: var(--background);
     color: var(--gray);
     font-family: var(--font-family-sans-serif);
-    font-weight: 300;
+    font-weight: 400;
+    margin-left: -10px;
+    margin-right: 0px;
 }
 
 header.text:hover {
@@ -131,7 +163,7 @@ header.text:hover {
 
 body {
     text-rendering: optimizeLegibility;
-    margin: 0;
+    padding-top: 35px;
     font-family: var(--font-family-sans-serif);
     font-size: 0.875rem;
     font-weight: 400;
@@ -140,7 +172,7 @@ body {
     text-align: left;
     background-color: var(--background);
     min-height: 77.5vh;
-    max-width: 97vw;
+    min-width: 100vw;
 }
 
 h1,
@@ -167,6 +199,12 @@ button {
     align-content: center;
 }
 
+img {
+    max-width: 208;
+    max-height: 440;
+    width: 100%;
+}
+
 .fa {
     font-size: 100%;
     text-align: center;
@@ -187,13 +225,13 @@ button {
 }
 
 .footer {
-    position: relative;
+    bottom: 0;
     width: 100%;
-    min-height: 8vh;
+    min-height: 4.23%;
     bottom: 0px;
-    margin-top: 2vh;
     clear: both;
-    padding-top: 2vh;
+    padding-top: 2.61%;
+    padding-bottom: 1.61%;
     background-color: var(--background);
     color: var(--gray);
     font-weight: 200;
@@ -203,6 +241,23 @@ button {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.dark-text {
+    color: var(--background) !important;
+}
+
+.transparent-bg {
+    background-image: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.animated-bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border: none !important;
 }
 
 @keyframes gradient {
@@ -215,4 +270,59 @@ a {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.hero {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.hero-top {
+    padding-top: 36px;
+}
+
+.hero-bottom {
+    padding-bottom: 36px;
+}
+
+.minitron {
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 800;
+    font-family: var(--font-family-sans-serif);
+    color: var(--light-bg);
+}
+
+.initron {
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 300;
+    font-family: var(--font-family-sans-serif);
+    color: var(--light-bg);
+}
+
+.carousel {
+    outline: none;
+    border: none;
+    display: flex !important;
+    margin-top: 36px;
+    min-height: 36px;
+    max-height: 152.48px;
+}
+
+.carousel-item {
+    transition: opacity ease-in-out 1s;
+    display: flex !important;
+    opacity: 0;
+    outline: none;
+    transition-delay: 4s;
+}
+
+.carousel-item.active {
+    opacity: 1 !important;
+    display: flex !important;
+    outline: none;
+    transition-delay: 0s !important;
 }
