@@ -9,7 +9,7 @@ import { HttpHeaders } from '@angular/common/http'
   providedIn: 'root'
 })
 export class ContactoService {
-  private mailApi = 'https://mailthis.to/codeninja'
+  private mailApi = 'https://mailthis.to/Haikode'
 
   constructor(private http: HttpClient) { }
 

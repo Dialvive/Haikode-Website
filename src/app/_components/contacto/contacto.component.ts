@@ -16,10 +16,10 @@ export class ContactoComponent implements OnInit {
     this.FormData = this.builder.group({
       Fullname: new FormControl('', [Validators.required]),
       Email: new FormControl('', [Validators.compose([Validators.required, Validators.email])]),
-      Comment: new FormControl('', [Validators.required]),
       Position: new FormControl(''),
       Company: new FormControl(''),
       Country: new FormControl(''),
+      Comment: new FormControl('', [Validators.required])
     });
   }
 
