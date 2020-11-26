@@ -22,7 +22,8 @@
                         "assets": [
                             "src/favicon.ico",
                             "src/assets/img/ChicaConLaptop.svg",
-                            "src/assets/img/Equipo.svg"
+                            "src/assets/img/Equipo.svg",
+                            "src/assets/img/EquipoJunta.svg"
                         ],
                         "styles": [
                             "node_modules/bootstrap/dist/css/bootstrap.min.css",

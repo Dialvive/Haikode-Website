@@ -112,23 +112,27 @@ header {
 .row-light {
     background-color: var(--light-bg);
     color: var(--background);
+    min-height: 286px;
     height: fit-content;
     padding-top: 1.61%;
     padding-bottom: 1.61%;
     padding-left: 6.85%;
     padding-right: 6.85%;
-    overflow-x: visible;
+    align-items: center;
+    justify-content: center;
 }
 
 .row-dark {
     background-color: var(--background);
     color: var(--light-bg);
+    min-height: 286px;
     height: fit-content;
     padding-top: 1.61%;
     padding-bottom: 1.61%;
     padding-left: 6.85%;
     padding-right: 6.85%;
-    overflow-x: visible;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-ul {

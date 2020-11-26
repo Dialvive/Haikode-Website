@@ -1,0 +1,58 @@
+<div class="row row-light">
+    <div class="d-none d-lg-flex col-md-1 col-xl-2 col-lat"></div>
+    <div class="col-12 col-md-10 col-xl-8 col-main align-content-center justify-content-center">
+        <h2 class="text-center">¡Ponte en contacto con nosotros!</h2>
+        <p class="text-center mb-5">¿Tienes un proyecto? ¿Quieres trabajar con nosotros? ¿Decir hola?</p>
+        <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="fullname">Nombre *</label>
+                        <input type="text" class="form-control" name="Fullname" placeholder="Nombre de contacto." formControlName="Fullname" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="Email">Email *</label>
+                        <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Correo electrónico." formControlName="Email" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="Company">Compañía</label>
+                        <input type="text" class="form-control" name="Company" placeholder="Nombre de tu empresa o negocio." formControlName="Company" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="Position">Posición</label>
+                        <input type="text" class="form-control" name="Position" placeholder="Cargo que tienes en tu empresa o negocio." formControlName="Position" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="Country">Ubicación</label>
+                        <input type="text" class="form-control" name="Country" placeholder="¿En donde te encuentras?" formControlName="Country" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Mensaje *</label>
+                <textarea class="form-control" formControlName="Comment" name="Comment"></textarea>
+                <small id="helper" class="form-text text-muted">* Campos obligatorios.</small>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">
+                    Enviar
+                </button>
+            </div>
+
+        </form>
+    </div>
+    <div class="d-none d-lg-flex col-md-1 col-xl-2 col-lat"></div>
+</div>
