@@ -2,6 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+## Dependencias
+- Angular (npm)
+- popperjs (npm, cdn)
+- Bootstrap4 (cdn)
+- ng-bootstrap (npm)
+- Font Awesome 4.7 (cdn)
+- Font Merriweather Sans, Amaranth (cdn)
+- AJAX (cdn)
+
+## Instrucciones para ejecutar
+Ejecular en terminal dentro del directorio del proyecto:
+-     npm install
+-     npm install -g @angular/cli
+-     npm i express morgan promise-mysql cors
+-     npm i @types/express @types/morgan @types/cors -D
+-     npm i @popperjs/core
+-     npm install --save @ng-bootstrap/ng-bootstrap
+-     ng add @ng-bootstrap/ng-bootstrap
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
