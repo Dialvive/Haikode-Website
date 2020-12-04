@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { SolucionesComponent } from './_components/soluciones/soluciones.component';
+import { ProyectosComponent } from './_components/proyectos/proyectos.component';
 
 
 
@@ -24,7 +25,8 @@ import { SolucionesComponent } from './_components/soluciones/soluciones.compone
     FooterComponent,
     NosotrosComponent,
     ContactoComponent,
-    SolucionesComponent
+    SolucionesComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,

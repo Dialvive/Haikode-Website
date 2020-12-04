@@ -11,6 +11,8 @@ export class ContactoComponent implements OnInit {
 
   FormData: FormGroup;
   constructor(private builder: FormBuilder, private contact: ContactoService) { }
+  
+  fileToUpload: File = null;
 
   ngOnInit() {
     this.FormData = this.builder.group({
@@ -19,12 +21,14 @@ export class ContactoComponent implements OnInit {
       Position: new FormControl(''),
       Company: new FormControl(''),
       Country: new FormControl(''),
+      File: new FormControl(''),
       Comment: new FormControl('', [Validators.required])
     });
+
   }
 
-
   onSubmit(FormData) {
+    FormData.append('File', this.fileToUpload, this.fileToUpload.name);
     console.log(FormData)
     this.contact.PostMessage(FormData)
       .subscribe(response => {
@@ -35,4 +39,8 @@ export class ContactoComponent implements OnInit {
         console.log({ error })
       })
   }
+
+  handleFileInput(files: FileList) {
+    this.fileToUpload = files.item(0);
+ }
 }

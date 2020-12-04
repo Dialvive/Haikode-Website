@@ -21,9 +21,10 @@
                         "aot": true,
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets/img/ChicaConLaptop.svg",
-                            "src/assets/img/Equipo.svg",
-                            "src/assets/img/EquipoJunta.svg"
+                            "src/assets/img/LenguaDeSenas.png",
+                            "src/assets/img/Mail.png",
+                            "src/assets/img/Manitas.png",
+                            "src/assets/vid/Manitas.mp4"
                         ],
                         "styles": [
                             "node_modules/bootstrap/dist/css/bootstrap.min.css",
